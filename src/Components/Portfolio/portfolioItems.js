@@ -3,11 +3,12 @@ import goldbet from '../../images/goldbet.jpg';
 import kinokadri from '../../images/kinokadri.png';
 import realbet from '../../images/realbet.jpg';
 import job24 from '../../images/job24.png';
+import videosports from '../../images/videosports.jpg';
 
 const portfolioItems = [
   {
     id: 0,
-    image: transfermarket,
+    image: videosports,
     title: 'Videosports',
     category: 'Web Design / Development',
     date: 'June 24, 2019',
