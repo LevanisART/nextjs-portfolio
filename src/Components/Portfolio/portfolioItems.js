@@ -8,7 +8,7 @@ import videosports from '../../images/videosport.jpg';
 const portfolioItems = [
   {
     id: 0,
-    image: videosport,
+    image: videosports,
     title: 'Videosports',
     category: 'Web Design / Development',
     date: 'June 24, 2019',
