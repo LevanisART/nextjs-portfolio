@@ -10,13 +10,13 @@ class Project extends React.Component {
 					<div className="col-lg-12">
 						<div className="project">
 							<div className="item p-3 d-flex align-items-start">
-                <div className="mt-3 py-1">
+                <div className="mt-3 mb-3 mb-md-0 py-1">
                   <a href={image} target="_blank" rel="noopener noreferrer" className="project_inner">
                     <div class="bar"></div>
                     <div class="projectimage"><img src={image} alt=""/></div>
                   </a>
                 </div>
-								<div className="pl-3 w-100">
+								<div className="pl-0 pl-md-3 w-100">
                   <div class="content">
                     <div class="text">
                       {
