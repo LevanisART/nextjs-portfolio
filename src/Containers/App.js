@@ -79,8 +79,8 @@ class Home extends React.Component {
                 <Item key={item[5].id} id={item[5].id} image={item[5].image} title={item[5].title} name={item[5].title} category={item[5].category} />
               </div>
             </div>
-            <div class="d-flex justify-content-center mt-3">
-              <Link class="btn rounded-pill px-4" to="/portfolio">See more</Link>
+            <div className="d-flex justify-content-center mt-3">
+              <Link className="btn rounded-pill px-4" to="/portfolio">See more</Link>
             </div>
           </div>
         </section>
