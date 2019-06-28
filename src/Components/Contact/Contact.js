@@ -5,7 +5,7 @@ function Contact() {
     <div class="d-flex flex-wrap px-2 px-sm-0 px-md-0">
       <div class="col-lg-8 col-md-7 py-2 my-1 pl-0 pr-0 pr-md-3">
 
-        <form method="POST" name="contactform" action="https://levanisart.herokuapp.com/contact.php"> 
+        <form method="POST" name="contactform" action="https://levanisart.000webhostapp.com/contact.php"> 
           <div class="form-input">
             <input type="text" placeholder="Full name" name="name" />
           </div>
