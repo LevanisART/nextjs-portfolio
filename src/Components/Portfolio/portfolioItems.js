@@ -17,22 +17,22 @@ const portfolioItems = [
   },
   {
     id: 1,
-    image: transfermarket,
-    title: 'TransferMarket',
-    category: 'UI/UX Design',
-    date: 'May 1, 2019',
-    dribbble: 'https://dribbble.com/shots/6420318-Transfer-Market',
-    description: "This is a concept home page design for football transfers website",
-    screenshots: false
-  },
-  {
-    id: 2,
     image: goldbet,
     title: 'Goldbet',
     category: 'Web Design / Development',
     date: 'June 6, 2019',
     website: 'http://goldbet.ge',
     description: "This is a sports predictions website which i built with Datalife Engine and some customisation to meet my client requirements.",
+    screenshots: false
+  },
+  {
+    id: 2,
+    image: transfermarket,
+    title: 'TransferMarket',
+    category: 'UI/UX Design',
+    date: 'May 1, 2019',
+    dribbble: 'https://dribbble.com/shots/6420318-Transfer-Market',
+    description: "This is a concept home page design for football transfers website",
     screenshots: false
   },
   {
