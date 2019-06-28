@@ -3,7 +3,7 @@ import goldbet from '../../images/goldbet.jpg';
 import kinokadri from '../../images/kinokadri.png';
 import realbet from '../../images/realbet.jpg';
 import job24 from '../../images/job24.png';
-import videosports from '../../images/videosports.jpg';
+import videosports from '../../images/Videosports.jpg';
 
 const portfolioItems = [
   {
