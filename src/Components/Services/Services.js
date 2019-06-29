@@ -7,7 +7,7 @@ function Services() {
         <div className="services-item rounded-lg">
           <i className="fas fa-code mb-4"></i>
           <h4 className="mb-4">Front-end Development</h4>
-          <p>Our front end development toolkit is powered up with the the most relevant technologies to enable product scalability and increase its performance.</p>
+          <p>Our front end development toolkit is powered up with the most relevant technologies to enable product scalability and increase its performance.</p>
         </div>
       </div>
       <div className="col-lg-4 col-md-6 col-sm-12 d-flex grow">
