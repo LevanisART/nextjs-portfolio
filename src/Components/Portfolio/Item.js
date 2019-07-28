@@ -5,7 +5,7 @@ const Item = ({title, category, image, name, id}) => {
   return (
     <div className="col-lg-4 col-md-6 my-3">
       <div className="card border-0 rounded-lg overflow-hidden">
-        <Link to={'/projects/' + id + '/' + name }>
+        <Link to={`portfolio/${id}/${name}`}>
           <div className="card-body p-0">
             <div className="card-image d-flex justify-content-center align-items-center overlay">
               <img className="card-img-top" src={image} alt=""/>

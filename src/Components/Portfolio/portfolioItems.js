@@ -4,6 +4,7 @@ import kinokadri from '../../images/kinokadri.png';
 import realbet from '../../images/realbet.jpg';
 import job24 from '../../images/job24.png';
 import videosports from '../../images/videosport.jpg';
+import proxysite from '../../images/proxysite.jpg';
 
 const portfolioItems = [
   {
@@ -18,12 +19,12 @@ const portfolioItems = [
   },
   {
     id: 1,
-    image: goldbet,
-    title: 'Goldbet',
-    category: 'Web Design / Development',
-    date: 'June 6, 2019',
-    website: 'http://goldbet.ge',
-    description: "This is a sports predictions website which i built with Datalife Engine and some customisation to meet my client requirements.",
+    image: proxysite,
+    title: 'ProxySite',
+    category: 'UI/UX Design / Front-End Development',
+    date: 'July 25, 2019',
+    website: 'https://proxysite.page',
+    description: "With ProxySite you can easily access to blocked websites and surf the internet anonymously. You can hide your IP online, unblock any banned sites (e.g. Youtube, Facebook), protect your online privacy and browse the web with peace of mind.",
     screenshots: false
   },
   {
@@ -38,6 +39,16 @@ const portfolioItems = [
   },
   {
     id: 3,
+    image: goldbet,
+    title: 'Goldbet',
+    category: 'Web Design / Development',
+    date: 'June 6, 2019',
+    website: 'http://goldbet.ge',
+    description: "This is a sports predictions website which i built with Datalife Engine and some customisation to meet my client requirements.",
+    screenshots: false
+  },
+  {
+    id: 4,
     image: kinokadri,
     title: 'Kinokadri',
     category: 'Web Design / Development',
@@ -47,7 +58,7 @@ const portfolioItems = [
     screenshots: false
   },
   {
-    id: 4,
+    id: 5,
     image: realbet,
     title: 'Realbet',
     category: 'Web Design / Development',
@@ -56,7 +67,7 @@ const portfolioItems = [
     screenshots: false
   },
   {
-    id: 5,
+    id: 6,
     image: job24,
     title: 'Job24',
     category: 'Web Design / Development',

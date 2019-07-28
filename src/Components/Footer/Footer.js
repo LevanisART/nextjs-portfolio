@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import logo from '../../images/logo.png';
 
 class Footer extends React.Component {
@@ -7,7 +8,7 @@ class Footer extends React.Component {
       <footer className="sticky-footer mt-5">
         <div className="container d-flex justify-content-between flex-wrap align-items-center animatedParent">
           <div className="col-xl-4 col-lg-3 col-md-2 col-sm-4 col-3 d-flex justify-content-start logo animated bounceInLeft">
-            <a href="/"><img src={logo} alt="logo" /></a>
+            <Link to="/"><img src={logo} alt="logo" /></Link>
           </div>
 
 				  <div className="col-xl-4 col-lg-5 col-md-6 col-sm-8 col-9 d-flex justify-content-center social animated bounceInDown">

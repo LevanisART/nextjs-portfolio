@@ -23,7 +23,8 @@ function App() {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/services" component={ServicesRoute} />
-            <Route path="/portfolio" component={PortfolioRoute} />
+            <Route exact path="/portfolio" component={PortfolioRoute} />
+            <Route path="/portfolio/:id/:name" component={ProjectRoute} />
             <Route path="/projects/:id/:name" component={ProjectRoute} />
             <Route path="/contact" component={ContactRoute} />
           </Switch>
@@ -43,6 +44,10 @@ class Home extends React.Component {
   }
   render() {
     const item = portfolioItems;
+    var rows = [];
+    for (var i = 0; i < 6; i++) {
+        rows.push(<Item key={item[i].id} id={item[i].id} image={item[i].image} title={item[i].title} name={item[i].title} category={item[i].category} />);
+    }
     return (    
       <div>
         <About/>
@@ -71,12 +76,7 @@ class Home extends React.Component {
           <div className="container">
             <div className="container_inner animatedParent">
               <div className="card-deck align-items-start animated fadeInUp">
-                <Item key={item[0].id} id={item[0].id} image={item[0].image} title={item[0].title} name={item[0].title} category={item[0].category} />
-                <Item key={item[1].id} id={item[1].id} image={item[1].image} title={item[1].title} name={item[1].title} category={item[1].category} />
-                <Item key={item[2].id} id={item[2].id} image={item[2].image} title={item[2].title} name={item[2].title} category={item[2].category} />
-                <Item key={item[3].id} id={item[3].id} image={item[3].image} title={item[3].title} name={item[3].title} category={item[3].category} />
-                <Item key={item[4].id} id={item[4].id} image={item[4].image} title={item[4].title} name={item[4].title} category={item[4].category} />
-                <Item key={item[5].id} id={item[5].id} image={item[5].image} title={item[5].title} name={item[5].title} category={item[5].category} />
+                {rows}
               </div>
             </div>
             <div className="d-flex justify-content-center mt-3">
