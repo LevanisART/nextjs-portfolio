@@ -5,12 +5,12 @@ import Css from '../../images/css.png';
 import Sass from '../../images/sass.png';
 import Bootstrap from '../../images/bootstrap.png';
 import Javascript from '../../images/javascript.png';
-import Illustrator from '../../images/illustrator.png';
+// import Illustrator from '../../images/illustrator.png';
 import Figma from '../../images/figma.png';
 import Reactjs from '../../images/react.png';
 import Nodejs from '../../images/nodejs.png';
 import PostgreSQL from '../../images/postgresql.png';
-import Wordpress from '../../images/wordpress.png';
+// import Wordpress from '../../images/wordpress.png';
 
 class Skills extends React.Component {
   render() {
@@ -125,7 +125,7 @@ class Skills extends React.Component {
           </div>
         </div>
 
-        <div className="col-md-6 col-md-6 my-2 px-0 py-1 grow-sm">
+        {/* <div className="col-md-6 col-md-6 my-2 px-0 py-1 grow-sm">
           <div className="card border-0">
             <div className="card-body p-1">
               <div className="d-flex justify-content-between align-items-center p-3 flex-wrap">
@@ -141,7 +141,7 @@ class Skills extends React.Component {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="col-md-6 col-md-6 my-2 px-0 py-1 grow-sm">
           <div className="card border-0">
@@ -215,7 +215,7 @@ class Skills extends React.Component {
           </div>
         </div>
 
-        <div className="col-md-6 col-md-6 my-2 px-0 py-1 grow-sm">
+        {/* <div className="col-md-6 col-md-6 my-2 px-0 py-1 grow-sm">
           <div className="card border-0">
             <div className="card-body p-1">
               <div className="d-flex justify-content-between align-items-center p-3 flex-wrap">
@@ -231,7 +231,7 @@ class Skills extends React.Component {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
       </div>
     )

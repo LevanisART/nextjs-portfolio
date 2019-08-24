@@ -1,10 +1,13 @@
-import transfermarket from '../../images/transfermarket.jpg';
-import goldbet from '../../images/goldbet.jpg';
-import kinokadri from '../../images/kinokadri.png';
-import realbet from '../../images/realbet.jpg';
-import job24 from '../../images/job24.png';
-import videosports from '../../images/videosport.jpg';
-import proxysite from '../../images/proxysite.jpg';
+import transfermarket from '../../images/projects/transfermarket.jpg';
+import goldbet from '../../images/projects/goldbet.jpg';
+import kinokadri from '../../images/projects/kinokadri.png';
+import realbet from '../../images/projects/realbet.jpg';
+import job24 from '../../images/projects/job24.png';
+import videosports from '../../images/projects/videosport.jpg';
+import proxysite from '../../images/projects/proxysite.jpg';
+import thebestpizza from '../../images/projects/TheBestPizza.jpg';
+import thebestpizza_home_page from '../../images/projects/TheBestPizza-Home-Page.jpg';
+import thebestpizza_product_page from '../../images/projects/TheBestPizza-Product-Page.jpg';
 
 const portfolioItems = [
   {
@@ -75,6 +78,19 @@ const portfolioItems = [
     website: 'https://job24.ge',
     description: "My client wanted a new website for posting jobs. I built a fully responsive website in Datalife Engine using HTML5/CSS3/JS.",
     screenshots: false
+  },
+  {
+    id: 7,
+    image: thebestpizza,
+    title: 'Pizza ordering design',
+    category: 'UI/UX Design',
+    date: 'Jul 30, 2019',
+    dribbble: 'https://dribbble.com/shots/6863511-Pizza-ordering-design',
+    description: "Modern and clean design for the website where you can order pizza online.",
+    screenshots: {
+      screenshot1: thebestpizza_home_page,
+      screenshot2: thebestpizza_product_page
+    }
   }
 ];
 

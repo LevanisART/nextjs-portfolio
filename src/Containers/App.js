@@ -122,7 +122,7 @@ function ServicesRoute() {
     <div>
       <div className="bigTitle py-5 d-flex flex-column align-items-center justify-content-center">
         <h2 className="text-white text-uppercase mb-3 pb-2">Services</h2>
-        <span className="h5 text-white text-center px-4 mb-4 pb-2">Modern web/mobile development and design services</span>
+        <span className="h5 font-weight-normal text-white text-center px-4 mb-4 pb-2">Modern web/mobile development and design services</span>
       </div>
 
       <div className="container container-rounded rounded-lg position-relative">
@@ -139,7 +139,7 @@ function ContactRoute() {
     <div>
       <div className="bigTitle py-5 d-flex align-items-center justify-content-center flex-column">
         <h2 className="text-white text-uppercase mb-3 pb-2">Contact</h2>
-        <span className="h5 text-white text-center px-4 mb-4 pb-2">Get in touch</span>
+        <span className="h5 font-weight-normal text-white text-center px-4 mb-4 pb-2">Get in touch</span>
       </div>
 
       <div className="container container-rounded rounded-lg bg-white shadow position-relative">
@@ -164,7 +164,7 @@ class PortfolioRoute extends React.Component {
       <div>
         <div className="bigTitle py-5 d-flex flex-column align-items-center justify-content-center">
           <h2 className="text-white text-uppercase mb-3 pb-2">Portfolio</h2>
-          <span className="h5 text-white text-center px-4 mb-4 pb-2">These are my works</span>
+          <span className="h5 font-weight-normal text-white text-center px-4 mb-4 pb-2">These are my works</span>
         </div>
 
         <div className="container container-rounded rounded-lg bg-white shadow position-relative">
@@ -178,6 +178,38 @@ class PortfolioRoute extends React.Component {
 }
 
 
+// class ProjectRoute extends React.Component {
+//   render() {
+//     let id = this.props.match.params.id;
+//     let name = this.props.match.params.name;
+//     const {image, title, category, description, screenshots, date, website, dribbble} = portfolioItems[id];
+//     return (
+//       <div>
+//         <div className="bigTitle py-5 d-flex align-items-center justify-content-center flex-column">
+//           <h2 className="text-white text-uppercase mb-3 pb-2">{title}</h2>
+//           <h3 className="h5 font-weight-normal text-white text-center px-4 mb-4 pb-2">{category}</h3>
+//         </div>
+
+//         <div className="container container-rounded">
+//           <Project
+//             id={id}
+//             name={name}
+//             image={image}
+//             title={title}
+//             category={category}
+//             date={date}
+//             dribbble={dribbble}
+//             website={website}
+//             description={description}
+//             screenshots={screenshots}
+//           />
+//         </div>
+//       </div>
+//     );
+//   }
+// }
+
+
 class ProjectRoute extends React.Component {
   render() {
     let id = this.props.match.params.id;
@@ -187,12 +219,11 @@ class ProjectRoute extends React.Component {
       <div>
         <div className="bigTitle py-5 d-flex align-items-center justify-content-center flex-column">
           <h2 className="text-white text-uppercase mb-3 pb-2">{title}</h2>
-          <h3 className="h5 text-white text-center px-4 mb-4 pb-2">{category}</h3>
+          <h3 className="h5 font-weight-normal text-white text-center px-4 mb-4 pb-2">{category}</h3>
         </div>
 
         <div className="container container-rounded">
           <Project
-            id={id}
             name={name}
             image={image}
             title={title}

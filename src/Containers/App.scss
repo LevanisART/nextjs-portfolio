@@ -63,7 +63,6 @@ input[type=submit]:hover {
 }
 
 .nav {
-  margin-top: -3px;
   li a {
     color: #4A516D;
     font-size: 15px;
@@ -139,7 +138,7 @@ input[type=submit]:hover {
     h1 {
       color: $primaryColor;
       font-size: 34px;
-      font-weight: bold;
+      font-weight: 700;
     }
     p {
       font-size: 15px;
@@ -195,7 +194,7 @@ input[type=submit]:hover {
   h2 {
     color: $heading;
     font-size: 38px;
-    font-weight: bold;
+    font-weight: 700;
   }
   span {
     color: $heading-sm;
@@ -228,9 +227,8 @@ input[type=submit]:hover {
   }
   h2 {
     font-size: 38px;
-    font-weight: bold;
+    font-weight: 500;
     text-shadow: 0 8px 5px rgba(0,0,0,0.03);
-    letter-spacing: 1px;
   }
   span {
     color: $heading-sm;
@@ -494,10 +492,6 @@ input[type=submit]:hover {
   transform: scale(1.05);
 }
 
-.grow:active {
-  transform: scale(.90);
-}
-
 .grow-sm {
   backface-visibility: hidden;
   transform: translateZ(0);
@@ -507,10 +501,6 @@ input[type=submit]:hover {
 .grow-sm:hover,
 .grow-sm:focus {
   transform: scale(1.03);
-}
-
-.grow-sm:active {
-  transform: scale(.90);
 }
 
 .carousel-indicators {
@@ -537,7 +527,7 @@ input[type=submit]:hover {
     .card-header {
       background: #F5F6FA;
       span {
-        font-weight: bold;
+        font-weight: 700;
         font-size: 15px;
         color: #1C3A55;
       }
@@ -568,7 +558,7 @@ input[type=submit]:hover {
   h4 {
     color: #3a566e;
     letter-spacing: 0.7px;
-    font-weight: bold;
+    font-weight: 700;
   }
   p {
     font-size: 14px;
@@ -779,7 +769,7 @@ input[type=submit]:hover {
   a {
     font-size: 13px;
     color: #FFF;
-    font-weight: bold;
+    font-weight: 700;
     letter-spacing: 1px;
   }
   &.email {

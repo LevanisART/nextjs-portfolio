@@ -18,7 +18,7 @@ function Header() {
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
-              <ul className="nav navbar-nav">
+              <ul className="nav navbar-nav mt-n1">
                 <li className="mx-2"><NavLink exact activeClassName="active" to="/">Home page</NavLink></li>
                 <li className="mx-2"><NavLink to="/services">Services</NavLink></li>
                 <li className="mx-2"><NavLink to="/portfolio">Portfolio</NavLink></li>

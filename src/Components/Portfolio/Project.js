@@ -73,7 +73,7 @@ class Project extends React.Component {
                   </div>
 				      		<div className="content">
 				      			<div className="row screenshots mt-4 py-1">
-                      { screenshot1 !== null
+                      { screenshot1
                         ?
 				      			  	<div className="col-lg-4 col-md-6 col-sm-6 col-xs-12">
 				      			  		<a className="screenshot" href={screenshot1} target="_blank" rel="noopener noreferrer" title="Screenshot 1">
@@ -84,7 +84,7 @@ class Project extends React.Component {
                           <div></div>
                         )
                       }
-                      { screenshot2 !== null
+                      { screenshot2
                         ?
 				      			  	<div className="col-lg-4 col-md-6 col-sm-6 col-xs-12">
 				      			  		<a className="screenshot" href={screenshot2} target="_blank" rel="noopener noreferrer" title="Screenshot 2">
@@ -95,7 +95,7 @@ class Project extends React.Component {
                           <div></div>
                         )
                       }
-                      { screenshot3 !== null
+                      { screenshot3
                         ?
 				      			  	<div className="col-lg-4 col-md-6 col-sm-6 col-xs-12">
 				      			  		<a className="screenshot" href={screenshot3} target="_blank" rel="noopener noreferrer" title="Screenshot 3">
