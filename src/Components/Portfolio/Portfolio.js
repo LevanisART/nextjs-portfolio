@@ -2,7 +2,6 @@ import React from 'react';
 import Item from './Item';
 
 function Portfolio({portfolio}) {
-  console.log(portfolio);
   const items = portfolio.map((item, i) =>
     <Item 
       key={portfolio[i].id} 
@@ -14,8 +13,8 @@ function Portfolio({portfolio}) {
     />
   );
   return (
-    <div className="container_inner animatedParent">
-      <div className="portfolioItems card-deck align-items-start animated fadeInUp">
+    <div className="container_inner">
+      <div className="portfolioItems card-deck align-items-start">
         {items}
       </div>
     </div>

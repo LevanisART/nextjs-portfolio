@@ -36,46 +36,46 @@ function App() {
 }
 
 class Home extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      portfolio: portfolioItems
-    }
-  }
+  // constructor() {
+  //   super();
+  //   this.state = {
+  //     portfolio: portfolioItems
+  //   }
+  // }
   render() {
     const item = portfolioItems;
     var rows = [];
     for (var i = 0; i < 6; i++) {
-        rows.push(<Item key={item[i].id} id={item[i].id} image={item[i].image} title={item[i].title} name={item[i].title} category={item[i].category} />);
+      rows.push(<Item key={item[i].id} id={item[i].id} image={item[i].image} title={item[i].title} name={item[i].title} category={item[i].category} />);
     }
-    return (    
+    return (
       <div>
         <About/>
   
-        <section className="specializedIn py-5 my-3 position-relative animatedParent" data-sequence='500'>
-          <div className="d-flex justify-content-center flex-wrap animated bounceInDown" data-id='1'>
+        <section className="specializedIn py-4 my-3 position-relative" data-sequence='500'>
+          <div className="d-flex justify-content-center flex-wrap" data-id='1'>
             <div className="title d-flex align-items-center flex-column p-5">
               <h2>Specialized In</h2>
               <span className="mt-3">Development and design for web and mobile</span>
             </div>
           </div>
           <div className="container codingbg mt-2">
-            <div className="container_inner animatedParent">
+            <div className="container_inner">
               <Specialized />
             </div>
           </div>
         </section>
   
-        <section className="portfolio py-5 my-3 position-relative animatedParent">
-          <div className="d-flex justify-content-center flex-wrap animated fadeInLeft">
+        <section className="portfolio py-5 my-3 position-relative">
+          <div className="d-flex justify-content-center flex-wrap">
             <div className="title d-flex align-items-center flex-column px-5 pt-4 pb-5">
               <h2>Portfolio</h2>
               <span className="mt-3">Check out some of my recent projects</span>
             </div>
           </div>
           <div className="container">
-            <div className="container_inner animatedParent">
-              <div className="card-deck align-items-start animated fadeInUp">
+            <div className="container_inner">
+              <div className="card-deck align-items-start">
                 {rows}
               </div>
             </div>
@@ -85,29 +85,29 @@ class Home extends React.Component {
           </div>
         </section>
   
-        <section className="skills py-5 my-3 position-relative light-bg animatedParent">
-          <div className="d-flex justify-content-center flex-wrap animated growIn">
+        <section className="skills py-5 my-3 position-relative light-bg">
+          <div className="d-flex justify-content-center flex-wrap">
             <div className="title d-flex align-items-center flex-column px-5 pt-4 pb-5">
               <h2>Skill set</h2>
               <span className="mt-3">Skills and skill levels</span>
             </div>
           </div>
           <div className="container">
-            <div className="container_inner animatedParent">
+            <div className="container_inner">
               <Skills />
             </div>
           </div>
         </section>
   
-        {/* <section className="testimonials py-5 my-3 animatedParent">
-          <div className="d-flex justify-content-center flex-wrap animated fadeInRight">
+        {/* <section className="testimonials py-5 my-3">
+          <div className="d-flex justify-content-center flex-wrap">
             <div className="title d-flex align-items-center flex-column px-5 pt-4 pb-5">
               <h2>Testimontials</h2>
               <span className="mt-3">See what our customers are saying</span>
             </div>
           </div>
           <div className="container">
-            <div className="container_inner animatedParent">
+            <div className="container_inner">
               <Testimonials />
             </div>
           </div>
@@ -126,7 +126,7 @@ function ServicesRoute() {
       </div>
 
       <div className="container container-rounded rounded-lg position-relative">
-        <section className="position-relative animatedParent">
+        <section className="position-relative">
           <Services />
         </section>
       </div>
@@ -143,7 +143,7 @@ function ContactRoute() {
       </div>
 
       <div className="container container-rounded rounded-lg bg-white shadow position-relative">
-        <section className="p-2 position-relative animatedParent">
+        <section className="p-2 position-relative">
           <Contact />
         </section>
       </div>
@@ -152,13 +152,6 @@ function ContactRoute() {
 }
 
 class PortfolioRoute extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      portfolio: portfolioItems
-    }
-  }
-  
   render() {
     return (
       <div>
@@ -168,7 +161,7 @@ class PortfolioRoute extends React.Component {
         </div>
 
         <div className="container container-rounded rounded-lg bg-white shadow position-relative">
-          <section className="portfolio p-2 m-1 position-relative animatedParent">
+          <section className="portfolio p-2 m-1 position-relative">
             <Portfolio portfolio={portfolioItems}/>
           </section>
         </div>
@@ -176,39 +169,6 @@ class PortfolioRoute extends React.Component {
     );
   }
 }
-
-
-// class ProjectRoute extends React.Component {
-//   render() {
-//     let id = this.props.match.params.id;
-//     let name = this.props.match.params.name;
-//     const {image, title, category, description, screenshots, date, website, dribbble} = portfolioItems[id];
-//     return (
-//       <div>
-//         <div className="bigTitle py-5 d-flex align-items-center justify-content-center flex-column">
-//           <h2 className="text-white text-uppercase mb-3 pb-2">{title}</h2>
-//           <h3 className="h5 font-weight-normal text-white text-center px-4 mb-4 pb-2">{category}</h3>
-//         </div>
-
-//         <div className="container container-rounded">
-//           <Project
-//             id={id}
-//             name={name}
-//             image={image}
-//             title={title}
-//             category={category}
-//             date={date}
-//             dribbble={dribbble}
-//             website={website}
-//             description={description}
-//             screenshots={screenshots}
-//           />
-//         </div>
-//       </div>
-//     );
-//   }
-// }
-
 
 class ProjectRoute extends React.Component {
   render() {
@@ -239,6 +199,5 @@ class ProjectRoute extends React.Component {
     );
   }
 }
-
 
 export default App;

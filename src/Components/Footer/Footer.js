@@ -14,27 +14,27 @@ class Footer extends React.Component {
 				  <div className="col-xl-4 col-lg-5 col-md-6 col-sm-8 col-9 d-flex justify-content-center social animated bounceInDown">
 				  	<ul className="list-inline">
 				  		<li className="list-inline-item mx-2">
-                <a className="rounded-pill" href="https://facebook.com/LevanisART" target="_blank" rel="noopener noreferrer">
+                <a className="rounded-pill" href="https://facebook.com/LevanisART" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
                   <i className="fab fa-facebook-f"></i>
                 </a>
               </li>
 				  		<li className="list-inline-item mx-2">
-                <a className="rounded-pill" href="https://dribbble.com/LevanisART" target="_blank" rel="noopener noreferrer">
+                <a className="rounded-pill" href="https://dribbble.com/LevanisART" aria-label="Dribbble" target="_blank" rel="noopener noreferrer">
                   <i className="fab fa-dribbble"></i>
                 </a>
               </li>
 				  		<li className="list-inline-item mx-2">
-                <a className="rounded-pill" href="https://instagram.com/levanis_art" target="_blank" rel="noopener noreferrer">
+                <a className="rounded-pill" href="https://instagram.com/levanis_art" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
                   <i className="fab fa-instagram"></i>
                 </a>
               </li>
 				  		<li className="list-inline-item mx-2">
-                <a className="rounded-pill" href="https://github.com/LevanisART" target="_blank" rel="noopener noreferrer">
+                <a className="rounded-pill" href="https://github.com/LevanisART" aria-label="Github" target="_blank" rel="noopener noreferrer">
                   <i className="fab fa-github"></i>
                 </a>
               </li>
 				  		<li className="list-inline-item mx-2">
-                <a className="rounded-pill" href="mailto:levani.qotolashvili@gmail.com">
+                <a className="rounded-pill" href="mailto:levani.qotolashvili@gmail.com" aria-label="Mail">
                   <i className="far fa-envelope"></i>
                 </a>
               </li>

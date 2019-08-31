@@ -15,7 +15,7 @@ import PostgreSQL from '../../images/postgresql.png';
 class Skills extends React.Component {
   render() {
     return (
-      <div className="card-deck align-items-start animated bounceInLeft">
+      <div className="card-deck align-items-start">
 
         <div className="col-md-6 col-md-6 my-2 px-0 py-1 grow-sm">
           <div className="card border-0">

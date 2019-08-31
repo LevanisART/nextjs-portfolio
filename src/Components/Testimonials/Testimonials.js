@@ -3,7 +3,7 @@ import React from 'react';
 class Testimonials extends React.Component {
   render() {
     return (
-      <div id="Testimonials" className="carousel slide animated bounceInDown" data-ride="carousel">
+      <div id="Testimonials" className="carousel slide" data-ride="carousel">
         <ol className="carousel-indicators">
           <li data-target="#Testimonials" data-slide-to="0" className="active"></li>
           <li data-target="#Testimonials" data-slide-to="1"></li>

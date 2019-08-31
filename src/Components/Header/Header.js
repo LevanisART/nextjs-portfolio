@@ -6,14 +6,14 @@ import {NavLink} from 'react-router-dom';
 
 function Header() {
   return (
-    <header className="header py-3 position-relative animatedParent">
+    <header className="header py-3 position-relative">
       <div className="container">
         <div className="header_inner d-flex justify-content-between align-items-center">
-          <div className="logo animated fadeInLeft">
+          <div className="logo">
             <Link to="/"><img src={logo} alt="logo" /></Link>
           </div>
     
-          <nav className="navbar-expand-lg navbar-light animated fadeInRight">
+          <nav className="navbar-expand-lg navbar-light">
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>

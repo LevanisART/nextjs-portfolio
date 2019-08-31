@@ -6,7 +6,7 @@ import BackendIcon from '../../images/back-end.png';
 class Specialized extends React.Component {
   render() {
     return (
-      <div className="card-deck justify-content-center px-3 animated bounceInUp">
+      <div className="card-deck justify-content-center px-3">
         <div className="col-xl-6 col-lg-6 col-md-5 card border-0 pt-3 pb-0 mx-3 mb-4 grow">
           <div className="card-body">
             <div className="d-flex justify-content-center">
