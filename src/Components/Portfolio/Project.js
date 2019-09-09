@@ -3,7 +3,7 @@ import React from 'react';
 class Project extends React.Component {
   render() {
     const {image, description, screenshots, date, website, dribbble} = this.props;
-    const { screenshot1, screenshot2, screenshot3 } = screenshots;
+    const { screenshot1, screenshot2, screenshot3, screenshot4, screenshot5, screenshot6 } = screenshots;
     return (
       <div>
 				<div className="row">
@@ -100,6 +100,39 @@ class Project extends React.Component {
 				      			  	<div className="col-lg-4 col-md-6 col-sm-6 col-xs-12">
 				      			  		<a className="screenshot" href={screenshot3} target="_blank" rel="noopener noreferrer" title="Screenshot 3">
 				      			  			<img src={screenshot3} alt="" />
+				      			  		</a>
+				      			  	</div>
+                        : (
+                          <div></div>
+                        )
+                      }
+                      { screenshot4
+                        ?
+				      			  	<div className="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+				      			  		<a className="screenshot" href={screenshot4} target="_blank" rel="noopener noreferrer" title="Screenshot 4">
+				      			  			<img src={screenshot4} alt="" />
+				      			  		</a>
+				      			  	</div>
+                        : (
+                          <div></div>
+                        )
+                      }
+                      { screenshot5
+                        ?
+				      			  	<div className="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+				      			  		<a className="screenshot" href={screenshot5} target="_blank" rel="noopener noreferrer" title="Screenshot 5">
+				      			  			<img src={screenshot5} alt="" />
+				      			  		</a>
+				      			  	</div>
+                        : (
+                          <div></div>
+                        )
+                      }
+                      { screenshot6
+                        ?
+				      			  	<div className="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+				      			  		<a className="screenshot" href={screenshot6} target="_blank" rel="noopener noreferrer" title="Screenshot 6">
+				      			  			<img src={screenshot6} alt="" />
 				      			  		</a>
 				      			  	</div>
                         : (

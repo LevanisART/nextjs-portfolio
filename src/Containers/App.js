@@ -27,6 +27,7 @@ function App() {
             <Route path="/portfolio/:id/:name" component={ProjectRoute} />
             <Route path="/projects/:id/:name" component={ProjectRoute} />
             <Route path="/contact" component={ContactRoute} />
+            <Route component={NoMatch} />
           </Switch>
         </main>
         <Footer />
@@ -45,7 +46,7 @@ class Home extends React.Component {
   render() {
     const item = portfolioItems;
     var rows = [];
-    for (var i = 0; i < 6; i++) {
+    for (var i = 4; i < 10; i++) {
       rows.push(<Item key={item[i].id} id={item[i].id} image={item[i].image} title={item[i].title} name={item[i].title} category={item[i].category} />);
     }
     return (
@@ -198,6 +199,20 @@ class ProjectRoute extends React.Component {
       </div>
     );
   }
+}
+
+function NoMatch({ location }) {
+  return (
+    <div>
+      <div className="container position-relative">
+        <section className="mt-4 p-3 container-rounded position-relative rounded-lg bg-white shadow">
+          <h3 className="m-1">
+            The requested URL <code>{location.pathname}</code> was not found
+          </h3>
+        </section>
+      </div>
+    </div>
+  );
 }
 
 export default App;
