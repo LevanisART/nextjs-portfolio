@@ -46,7 +46,7 @@ class Home extends React.Component {
   render() {
     const item = portfolioItems;
     var rows = [];
-    for (var i = 4; i < 10; i++) {
+    for (var i = 5; i < 10; i++) {
       rows.push(<Item key={item[i].id} id={item[i].id} image={item[i].image} title={item[i].title} name={item[i].title} category={item[i].category} />);
     }
     return (

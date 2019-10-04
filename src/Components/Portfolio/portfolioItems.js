@@ -18,6 +18,9 @@ import trip3 from '../../images/projects/Trip3.png';
 import trip4 from '../../images/projects/Trip4.png';
 import trip5 from '../../images/projects/Trip5.png';
 import trip6 from '../../images/projects/Trip6.png';
+import websitespeedtest from '../../images/projects/Website-Speed-Test.png';
+import websitespeedtest2 from '../../images/projects/Website-Speed-Test-Home-Page.png';
+import websitespeedtest3 from '../../images/projects/Website-Speed-Page.png';
 
 const portfolioItems = [
   {
@@ -130,6 +133,19 @@ const portfolioItems = [
       "screenshot4": trip4,
       "screenshot5": trip5,
       "screenshot6": trip6
+    }
+  },
+  {
+    "id": 10,
+    "image": websitespeedtest,
+    "title": 'Website speed test design',
+    "category": 'UI/UX Design',
+    "date": 'Oct 1, 2019',
+    "dribbble": 'https://dribbble.com/shots/7285152-Website-speed-test',
+    "description": "Some websites load slowly even with a fast internet connection. In this project i have worked for web app design which help you to see how quickly your website loads. Just write your website URL and the app will analyze your page's speed performance.",
+    "screenshots": {
+      "screenshot1": websitespeedtest2,
+      "screenshot2": websitespeedtest3
     }
   }
 ];
