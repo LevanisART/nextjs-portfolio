@@ -210,6 +210,7 @@ input[type=submit]:hover {
 .bigTitle {
   background: rgba(249, 41, 66, .94);
   position: relative;
+  padding: 0 1rem;
   &::before {
     content: '';
     background-image: url('../images/title.jpg');
@@ -225,10 +226,12 @@ input[type=submit]:hover {
   h2 {
     font-size: 38px;
     font-weight: 500;
+    text-align: center;
     text-shadow: 0 8px 5px rgba(0,0,0,0.03);
   }
   span {
     color: $heading-sm;
+    text-align: center;
   }
   
   @media (max-width: 480px) {

@@ -150,7 +150,7 @@ class Skills extends React.Component {
                 <div className="card-title m-0 d-flex flex-wrap align-items-center justify-content-start">
                   <img src={Figma} alt=""/>
                   <h6 className="h6 ml-2 pl-1 my-0 font-weight-bold">Figma</h6>
-                  <span className="ml-2">4 Months</span>
+                  <span className="ml-2">6 Months</span>
                 </div>
                 <div className="percent"><span>50%</span></div>
                 <div className="percentage w-100 rounded-pill mt-3 figma">
@@ -168,7 +168,7 @@ class Skills extends React.Component {
                 <div className="card-title m-0 d-flex flex-wrap align-items-center justify-content-start">
                   <img src={Reactjs} alt=""/>
                   <h6 className="h6 ml-2 pl-1 my-0 font-weight-bold">React.js</h6>
-                  <span className="ml-2">4 Months</span>
+                  <span className="ml-2">6 Months</span>
                 </div>
                 <div className="percent"><span>50%</span></div>
                 <div className="percentage w-100 rounded-pill mt-3 reactjs">
@@ -186,7 +186,7 @@ class Skills extends React.Component {
                 <div className="card-title m-0 d-flex flex-wrap align-items-center justify-content-start">
                   <img src={Nodejs} alt=""/>
                   <h6 className="h6 ml-2 pl-1 my-0 font-weight-bold">Node.js</h6>
-                  <span className="ml-2">3 Months</span>
+                  <span className="ml-2">5 Months</span>
                 </div>
                 <div className="percent"><span>50%</span></div>
                 <div className="percentage w-100 rounded-pill mt-3 nodejs">
@@ -204,7 +204,7 @@ class Skills extends React.Component {
                 <div className="card-title m-0 d-flex flex-wrap align-items-center justify-content-start">
                   <img src={PostgreSQL} alt=""/>
                   <h6 className="h6 ml-2 pl-1 my-0 font-weight-bold">PostgreSQL</h6>
-                  <span className="ml-2">3 Months</span>
+                  <span className="ml-2">5 Months</span>
                 </div>
                 <div className="percent"><span>40%</span></div>
                 <div className="percentage w-100 rounded-pill mt-3 postgresql">
