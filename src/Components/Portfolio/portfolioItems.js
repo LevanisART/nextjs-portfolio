@@ -21,7 +21,7 @@ import trip6 from '../../images/projects/Trip6.png';
 import websitespeedtest from '../../images/projects/Website-Speed-Test.png';
 import websitespeedtest2 from '../../images/projects/Website-Speed-Test-Home-Page.png';
 import websitespeedtest3 from '../../images/projects/Website-Speed-Page.png';
-import music from '../../images/projects/Music-App.png';
+import music from '../../images/projects/Music.png';
 
 const portfolioItems = [
   {

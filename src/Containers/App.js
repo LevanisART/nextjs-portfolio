@@ -7,7 +7,7 @@ import Specialized from '../Components/Specialized/Specialized';
 import Portfolio from '../Components/Portfolio/Portfolio';
 import Skills from '../Components/Skills/Skills';
 // import Testimonials from '../Components/Testimonials/Testimonials';
-import Services from '../Components/Services/Services';
+// import Services from '../Components/Services/Services';
 import Footer from '../Components/Footer/Footer';
 import portfolioItems from '../Components/Portfolio/portfolioItems';
 import Project from '../Components/Portfolio/Project';
@@ -22,7 +22,7 @@ function App() {
           <Header />
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/services" component={ServicesRoute} />
+            {/* <Route path="/services" component={ServicesRoute} /> */}
             <Route exact path="/portfolio" component={PortfolioRoute} />
             <Route path="/portfolio/:id/:name" component={ProjectRoute} />
             <Route path="/projects/:id/:name" component={ProjectRoute} />
@@ -118,22 +118,22 @@ class Home extends React.Component {
   }
 }
 
-function ServicesRoute() {
-  return (
-    <div>
-      <div className="bigTitle py-5 d-flex flex-column align-items-center justify-content-center">
-        <h2 className="text-white text-uppercase mb-3 pb-2">Services</h2>
-        <span className="h5 font-weight-normal text-white text-center px-4 mb-4 pb-2">Modern web/mobile development and design services</span>
-      </div>
+// function ServicesRoute() {
+//   return (
+//     <div>
+//       <div className="bigTitle py-5 d-flex flex-column align-items-center justify-content-center">
+//         <h2 className="text-white text-uppercase mb-3 pb-2">Services</h2>
+//         <span className="h5 font-weight-normal text-white text-center px-4 mb-4 pb-2">Modern web/mobile development and design services</span>
+//       </div>
 
-      <div className="container container-rounded rounded-lg position-relative">
-        <section className="position-relative">
-          <Services />
-        </section>
-      </div>
-    </div>
-  )
-}
+//       <div className="container container-rounded rounded-lg position-relative">
+//         <section className="position-relative">
+//           <Services />
+//         </section>
+//       </div>
+//     </div>
+//   )
+// }
 
 function ContactRoute() {
   return (
