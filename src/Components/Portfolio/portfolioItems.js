@@ -21,6 +21,7 @@ import trip6 from '../../images/projects/Trip6.png';
 import websitespeedtest from '../../images/projects/Website-Speed-Test.png';
 import websitespeedtest2 from '../../images/projects/Website-Speed-Test-Home-Page.png';
 import websitespeedtest3 from '../../images/projects/Website-Speed-Page.png';
+import music from '../../images/projects/Music-App.png';
 
 const portfolioItems = [
   {
@@ -147,6 +148,16 @@ const portfolioItems = [
       "screenshot1": websitespeedtest2,
       "screenshot2": websitespeedtest3
     }
+  },
+  {
+    "id": 11,
+    "image": music,
+    "title": 'Music Web App UI',
+    "category": 'UI/UX Design',
+    "date": 'Oct 20, 2019',
+    "dribbble": 'https://dribbble.com/shots/7687430-Music-Web-App-UI',
+    "description": "A little concept for an web app that lets users find and listen their favorite songs. My main aim was to make the platform clean and awesome.",
+    "screenshots": false
   }
 ];
 

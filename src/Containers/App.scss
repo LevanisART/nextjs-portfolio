@@ -722,17 +722,6 @@ input[type=submit]:hover {
   img {
     width: 100%;
     min-height: 100%;
-    transition: all 8s ease-out 0s;
-  }
-}
-
-@media (min-width: 1200px) {
-  .project_inner:hover {
-    .projectimage {
-      img {
-        transform: translateY(calc(-100% + 375px));
-      }
-    }
   }
 }
 
