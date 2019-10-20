@@ -156,7 +156,7 @@ const portfolioItems = [
     "category": 'UI/UX Design',
     "date": 'Oct 20, 2019',
     "dribbble": 'https://dribbble.com/shots/7687430-Music-Web-App-UI',
-    "description": "A little concept for an web app that lets users find and listen their favorite songs. My main aim was to make the platform clean and awesome.",
+    "description": "A little concept for an web app that lets users find and listen their favorite songs. My main goal was to make the platform clean and awesome.",
     "screenshots": false
   }
 ];
