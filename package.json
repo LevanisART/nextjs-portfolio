@@ -5,7 +5,7 @@
     "build": "next build",
     "build:rss": "node ./.next/serverless/posts/rss-feed.js",
     "start": "next start -p $PORT",
-    "heroku-postbuild": "next build && yarn build:rss",
+    "heroku-postbuild": "npm run build",
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
