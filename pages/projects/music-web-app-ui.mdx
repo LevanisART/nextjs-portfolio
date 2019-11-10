@@ -1,0 +1,18 @@
+import { withRouter } from 'next/router'
+import Project from '../../components/layouts/project'
+
+export const meta = {
+  published: true,
+  publishedAt: '2019-10-20',
+  title: 'Music Web App UI',
+  description: 'A little concept for an web app that lets users find and listen their favorite songs. My main goal was to make the platform clean and awesome.',
+  image: '/static/projects/Music.png',
+  category: 'UI/UX Design',
+  dribbble: 'https://dribbble.com/shots/7687430-Music-Web-App-UI'
+}
+
+export default withRouter(({ children, router }) => (
+  <Project path={router.pathname} meta={meta}>
+    {children}
+  </Project>
+))

@@ -1,0 +1,19 @@
+import { withRouter } from 'next/router'
+import Project from '../../components/layouts/project'
+
+export const meta = {
+  published: true,
+  publishedAt: '2019-06-07',
+  title: 'TransferMarket UI',
+  description: 'This is a concept home page design for football transfers website',
+  image: '/static/projects/transfermarket.jpg',
+  category: 'UI/UX Design & Front-end Development',
+  dribbble: 'https://dribbble.com/shots/6420318-Transfer-Market',
+  website: 'https://transfersmarket.ge/'
+}
+
+export default withRouter(({ children, router }) => (
+  <Project path={router.pathname} meta={meta}>
+    {children}
+  </Project>
+))

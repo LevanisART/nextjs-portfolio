@@ -1,0 +1,356 @@
+@import 'variables';
+@import 'reset';
+@import 'fonts';
+
+input, select, textarea {
+  width: 100%;
+  padding: 14px;
+  box-shadow: $shadow;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+input[type=submit] {
+  width: unset;
+  background-color: $primaryColor;
+  border: none;
+  cursor: pointer;
+  padding: 11px 20px;
+  color: #FFF;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+input[type=submit]:hover {
+  color: #FFF;
+}
+
+textarea {
+  min-height: 150px;
+}
+
+.primary-bg {
+  background: $primaryColor;
+  color: #FFF !important;
+}
+
+body {
+  background: #f9fafb !important;
+}
+
+.sidebar {
+  width: 300px;
+  min-height: 100vh;
+  transition: margin .25s ease-out;
+  background: #FFF;
+  position: fixed;
+  box-shadow: $shadow;
+  .sidebar-name {
+    font-size: 28px;
+    color: $primaryColor;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .sidebar-jobtitle {
+    font-size: 15px;
+    color: $textColor;
+    line-height: 24px;
+  }
+}
+
+.navbar {
+  margin: 0 26px;
+  .navbar-nav {
+    width: 100%;
+  }
+  .nav-item {
+    margin-bottom: 14px;
+    .nav-link {
+      color: $textColor2;
+      border-radius: 14px;
+      padding: 16px 20px;
+      font-size: 15px;
+      span {
+        font-weight: 500;
+      }
+      &.active {
+        background: $primaryColor;
+        color: #FFF;
+        svg path {
+          fill: #FFF !important;
+        }
+        .resume-icon path {
+          fill: none !important;
+          stroke: #FFF !important;
+        }
+      }
+    }
+  }
+}
+
+.content {
+  margin-left: 300px;
+  padding: 37px 46px;
+}
+
+.filter {
+  background: #FFF;
+  border-radius: 20px;
+  padding: 0 11px;
+  box-shadow: $shadow;
+  .category {
+    a {
+      color: $textColor;
+      padding: 23px 5px;
+      display: flex;
+      font-size: 15px;
+      font-weight: 500;
+      &.active {
+        color: $primaryColor;
+        border-bottom: 3px solid $primaryColor;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.project {
+  background: #FFF;
+  border-radius: 20px;
+  box-shadow: $shadow;
+  .project-image {
+    border-radius: 15px;
+  }
+  .project-title {
+    color: $primaryColor;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .project-category {
+    font-size: 14px;
+    color: $textColor;
+  }
+}
+
+.projectFull {
+  background: #FFF;
+  box-shadow: $shadow;
+  border-radius: 20px;
+  overflow: hidden;
+  .project-title {
+    color: $primaryColor;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .project-description {
+    color: #b8b8bf;
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .list-group-item {
+    border: none;
+    border-top: 1px solid #f0f2fa;
+    span {
+      color: #213549;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    h3 {
+      color: $textColor;
+      font-size: 14px;
+    }
+  }
+}
+
+.block {
+  background: #FFF;
+  border-radius: 20px;
+  box-shadow: $shadow;
+  .title {
+    color: #213549;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+.pagination a {
+  font-size: 14px;
+}
+
+.download-resume a {
+  background: $primaryColor;
+  padding: 15px 20px 17px;
+  color: #FFF;
+  border-radius: 8px;
+  span {
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
+
+.email {
+  color: #a0a0ad;
+}
+
+.job-title {
+  color: $primaryColor;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.skills-list {
+  span {
+    color: #a0a0ad;
+    font-size: 14px;
+  }
+}
+
+.footer {
+  width: 298px;
+  position: fixed;
+  bottom: 41px;
+  padding: 0 2.5rem;
+  .social {
+    svg {
+      &:hover {
+        path {
+          fill: #c4c4cc;
+        }
+      }
+    }
+  }
+  .divider {
+    margin: 20px 0;
+    border-color: #f0f2fa;
+  }
+  .copyright {
+    color: $textColor;
+    font-size: 13px;
+  }
+}
+
+.navbar-icon {
+  padding: 10px;
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  display: none;
+  svg {
+    width: 30px;
+    fill: #4971ff;
+  }
+  .close-nav {
+    display: none;
+  }
+  &.toggled {
+    .bars {
+      display: none;
+    }
+    .close-nav {
+      display: block;
+    }
+  }
+}
+
+
+@media (max-width: 767.98px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    position: relative;
+    min-height: unset;
+  }
+
+  .filter {
+    .category {
+      margin: 0 1rem;
+      a {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .footer {
+    position: relative;
+    bottom: 0;
+    background: #FFF;
+    width: 100%;
+    box-shadow: $shadow;
+    padding: 1.75rem 2rem;
+  }
+
+  .content {
+    margin-left: 0;
+    padding: 2rem 1rem;
+  }
+
+  .portfolio {
+    padding: 0 1rem;
+  }
+
+  .navbar {
+      max-height: 0;
+      overflow: hidden;
+  }
+
+  .navbar-icon {
+      display: block !important;
+  }
+
+  .navbar.toggled {
+      max-height: 1500px;
+      transition: 1s;
+  }
+
+
+}
+
+@media (max-width: 575.98px) {
+  .filter {
+    flex-wrap: wrap;
+    padding: 0;
+    .category {
+      width: 100%;
+      margin: 0 !important;
+      a {
+        width: 100%;
+        border-bottom: 1px solid #f0f2fa;
+        padding: 1.25rem 1.5rem;
+        &.active {
+          border-bottom: 1px solid #f0f2fa;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1439px) {
+  .col-project {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .attachments {
+    .attachment {
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+  }
+
+  .contact {
+    .form-input {
+      width: 500px;
+      max-width: 500px;
+      padding: 0 !important;
+    }
+    .contact-info {
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+import { withRouter } from 'next/router'
+import Project from '../../components/layouts/project'
+
+export const meta = {
+  published: true,
+  publishedAt: '2019-10-01',
+  title: 'Website speed test app UI',
+  description: "Some websites load slowly even with a fast internet connection. In this project i have worked for web app design which help you to see how quickly your website loads. Just write your website URL and the app will analyze your page's speed performance.",
+  image: '/static/projects/Website-Speed-Test.png',
+  category: 'UI/UX Design',
+  dribbble: 'https://dribbble.com/shots/7285152-Website-speed-test',
+  attachments: {
+    attachment1: '/static/projects/Website-Speed-Test-Home-Page.png',
+    attachment2: '/static/projects/Website-Speed-Page.png',
+  }
+}
+
+export default withRouter(({ children, router }) => (
+  <Project path={router.pathname} meta={meta}>
+    {children}
+  </Project>
+))

@@ -1,0 +1,22 @@
+import { withRouter } from 'next/router'
+import Project from '../../components/layouts/project'
+
+export const meta = {
+  published: true,
+  publishedAt: '2019-07-30',
+  title: 'TheBestPizza UI',
+  description: 'Modern and clean design for the website where you can order pizza online.',
+  image: '/static/projects/TheBestPizza.jpg',
+  category: 'UI/UX Design',
+  dribbble: 'https://dribbble.com/shots/6863511-Pizza-ordering-design',
+  attachments: {
+    attachment1: '/static/projects/TheBestPizza-Home-Page.jpg',
+    attachment2: '/static/projects/TheBestPizza-Product-Page.jpg'
+  }
+}
+
+export default withRouter(({ children, router }) => (
+  <Project path={router.pathname} meta={meta}>
+    {children}
+  </Project>
+))

@@ -1,0 +1,26 @@
+import { withRouter } from 'next/router'
+import Project from '../../components/layouts/project'
+
+export const meta = {
+  published: true,
+  publishedAt: '2019-09-09',
+  title: 'Trip app design',
+  description: 'A trip planner to help you choose the best places in Georgia. You can add your friends, share photos and so much more, all together in one app!',
+  image: '/static/projects/Trip.jpg',
+  category: 'UI/UX Design',
+  dribbble: 'https://dribbble.com/shots/7113669-Plan-your-trip-to-georgia',
+  attachments: {
+    attachment1: '/static/projects/Trip1.png',
+    attachment2: '/static/projects/Trip2.png',
+    attachment3: '/static/projects/Trip3.png',
+    attachment4: '/static/projects/Trip4.png',
+    attachment5: '/static/projects/Trip5.png',
+    attachment6: '/static/projects/Trip6.png'
+  }
+}
+
+export default withRouter(({ children, router }) => (
+  <Project path={router.pathname} meta={meta}>
+    {children}
+  </Project>
+))

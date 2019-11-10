@@ -1,0 +1,18 @@
+import { withRouter } from 'next/router'
+import Project from '../../components/layouts/project'
+
+export const meta = {
+  published: true,
+  publishedAt: '2019-07-25',
+  title: 'ProxySite',
+  description: 'With ProxySite you can easily access to blocked websites and surf the internet anonymously. You can hide your IP online, unblock any banned sites (e.g. Youtube, Facebook), protect your online privacy and browse the web with peace of mind.',
+  image: '/static/projects/proxysite.jpg',
+  category: 'Front-end Development',
+  website: 'https://proxysite.page/'
+}
+
+export default withRouter(({ children, router }) => (
+  <Project path={router.pathname} meta={meta}>
+    {children}
+  </Project>
+))
