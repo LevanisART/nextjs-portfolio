@@ -28,6 +28,8 @@
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.0-beta.14",
     "react-dom": "^16.8.6",
+    "react-ga": "^2.7.0",
+    "react-messenger-customer-chat": "^0.7.2",
     "rehype": "^8.0.0"
   },
   "devDependencies": {

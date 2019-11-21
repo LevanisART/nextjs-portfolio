@@ -1,4 +1,5 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Document, { Html, Head, Main, NextScript } from 'next/document';
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 class MyDocument extends Document {
   static async getInitialProps (ctx) {
@@ -13,6 +14,10 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
+          <MessengerCustomerChat
+            pageId="344694659052964"
+            appId="578347402965408"
+          />
         </body>
       </Html>
     )
