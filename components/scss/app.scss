@@ -69,7 +69,7 @@ body {
   .nav-item {
     margin-bottom: 14px;
     .nav-link {
-      color: $textColor2;
+      color: $textColor;
       border-radius: 14px;
       padding: 16px 20px;
       font-size: 15px;
@@ -203,7 +203,7 @@ body {
 
 .skills-list {
   span {
-    color: #a0a0ad;
+    color: #87879c;
     font-size: 14px;
   }
 }
@@ -217,7 +217,7 @@ body {
     svg {
       &:hover {
         path {
-          fill: #c4c4cc;
+          fill: #a3a3b4;
         }
       }
     }
@@ -228,7 +228,7 @@ body {
   }
   .copyright {
     color: $textColor;
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 
