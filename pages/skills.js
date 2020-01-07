@@ -1,5 +1,5 @@
-import { withRouter } from 'next/router'
 import Page from '../components/layouts/page'
+import { withRouter } from 'next/router'
 
 export const meta = {
   title: 'Skills & Tools',
@@ -18,8 +18,10 @@ export default withRouter(({ children, router }) => (
         <span className="mb-2">- Wireframing and prototyping</span>
 
         <h3 className="mt-4 mb-2">Tools</h3>
-        <span>- Adobe Photoshop</span>
-        <span>- Figma</span>
+        <span className="mb-2">- Adobe Photoshop</span>
+        <span className="mb-2">- Figma</span>
+        <span className="mb-2">- Adobe XD</span>
+        <span className="mb-2">- Adobe After Effects</span>
       </div>
     </div>
 
@@ -35,6 +37,7 @@ export default withRouter(({ children, router }) => (
         <span className="mb-2">- Javascript</span>
         <span className="mb-2">- React.js</span>
         <span className="mb-2">- Redux.js</span>
+        <span className="mb-2">- Firebase</span>
         <span className="mb-2">- Next.js</span>
         <span className="mb-2">- Typescript</span>
       </div>
