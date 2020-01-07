@@ -18,10 +18,12 @@ export default withRouter(({ children, router }) => (
         <span className="mb-2">- Wireframing and prototyping</span>
 
         <h3 className="mt-4 mb-2">Tools</h3>
-        <span className="mb-2">- Adobe Photoshop</span>
         <span className="mb-2">- Figma</span>
         <span className="mb-2">- Adobe XD</span>
+        <span className="mb-2">- Adobe Photoshop</span>
         <span className="mb-2">- Adobe After Effects</span>
+        <span className="mb-2">- Axure</span>
+        <span className="mb-2">- Invision</span>
       </div>
     </div>
 
