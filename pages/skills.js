@@ -27,6 +27,7 @@ export default withRouter(({ children, router }) => (
         <span className="mb-2">- Invision</span>
       </div>
     </div>
+    
 
     <div className="skills mt-5">
       <h2 className="job-title">Front-end Development:</h2>
