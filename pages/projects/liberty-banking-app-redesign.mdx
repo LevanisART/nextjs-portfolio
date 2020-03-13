@@ -1,0 +1,17 @@
+import { withRouter } from 'next/router'
+import Project from '../../components/layouts/project'
+
+export const meta = {
+  published: true,
+  publishedAt: '2020-03-13',
+  title: 'Liberty Banking App Redesign',
+  image: '/static/projects/liberty-banking-app-redesign.png',
+  category: 'UI/UX Design',
+  dribbble: 'https://dribbble.com/shots/10739025-Liberty-Banking-App-Redesign'
+}
+
+export default withRouter(({ children, router }) => (
+  <Project path={router.pathname} meta={meta}>
+    {children}
+  </Project>
+))
