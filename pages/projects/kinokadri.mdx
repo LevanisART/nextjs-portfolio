@@ -1,0 +1,18 @@
+import { withRouter } from 'next/router'
+import Project from '../../components/layouts/project'
+
+export const meta = {
+  published: true,
+  publishedAt: '2019-03-11',
+  title: 'Kinokadri',
+  description: 'In this project, I have worked for a Georgian movies website design and development.',
+  image: '/static/projects/kinokadri.png',
+  category: 'Front-end Development',
+  website: 'https://kinokadri.com/'
+}
+
+export default withRouter(({ children, router }) => (
+  <Project path={router.pathname} meta={meta}>
+    {children}
+  </Project>
+))

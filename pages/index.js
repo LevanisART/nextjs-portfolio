@@ -101,3 +101,4 @@ Portfolio.getInitialProps = async ({ query }) => {
 }
 
 export default withRouter(Portfolio)
+

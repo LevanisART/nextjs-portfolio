@@ -1,0 +1,18 @@
+import { withRouter } from 'next/router'
+import Project from '../../components/layouts/project'
+
+export const meta = {
+  published: true,
+  publishedAt: '2019-06-06',
+  title: 'Goldbet',
+  description: 'This is a sports predictions website which i built with Datalife Engine and some customisation to meet my client requirements.',
+  image: '/static/projects/goldbet.jpg',
+  category: 'Front-end Development',
+  website: 'https://goldbet.ge/'
+}
+
+export default withRouter(({ children, router }) => (
+  <Project path={router.pathname} meta={meta}>
+    {children}
+  </Project>
+))

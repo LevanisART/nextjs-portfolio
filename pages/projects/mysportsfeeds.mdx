@@ -1,0 +1,22 @@
+import { withRouter } from 'next/router'
+import Project from '../../components/layouts/project'
+
+export const meta = {
+  published: true,
+  publishedAt: '2019-09-02',
+  title: 'MySportsFeeds',
+  description: 'MySportsFeeds is provider of ultra-affordable sports data for everyone. Free and discounted rates for private use by students and developers. Power your sports app or business with raw data for NFL, MLB, NBA, NHL, and more.',
+  image: '/static/projects/MySportsFeeds.png',
+  category: 'UI/UX Design',
+  dribbble: 'https://dribbble.com/shots/7080349-Sports-Data-Provider-Website-Concept',
+  attachments: {
+    attachment1: '/static/projects/Mysportsfeeds-Home-Page.png',
+    attachment2: '/static/projects/Mysportsfeeds-Pricing.png'
+  }
+}
+
+export default withRouter(({ children, router }) => (
+  <Project path={router.pathname} meta={meta}>
+    {children}
+  </Project>
+))
